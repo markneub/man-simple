@@ -1,12 +1,10 @@
-Webpack 2 Boilerplate
+Personal website for Mark Neuburger
 ===========
 
-> Webpack 2 Boilerplate with Babel, SASS, jQuery and lodash on board
+> Built with Webpack 2, ES6, and SCSS
 
 # Requirements
-You only need <b>node.js</b> pre-installed and you’re good to go. 
-
-If you don’t want to work with jQuery or lodash, just remove it from the node packages and the webpack config.
+You only need <b>node.js</b> pre-installed and you’re good to go.
 
 # Setup
 ```sh
@@ -24,6 +22,5 @@ Build the current application
 $ npm run build
 ```
 
-# [webpack](https://webpack.js.org/)
-If you're not familiar with webpack, the [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) will serve the static files in your build folder and watch your source files for changes.
-When changes are made the bundle will be recompiled. This modified bundle is served from memory at the relative path specified in publicPath.
+# Credits
+- Based on [webpack-boilerplate](https://github.com/cvgellhorn/webpack-boilerplate)

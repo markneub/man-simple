@@ -1,21 +1,17 @@
 {
-  "name": "webpack-boilerplate",
-  "version": "2.0.0",
-  "description": "Webpack 2 Boilerplate with Babel, SASS, jQuery and lodash on board",
-  "author": "Christoph von Gellhorn",
+  "name": "man-simple",
+  "version": "1.0.0",
+  "description": "Simple personal website built with Webpack 2",
+  "author": "Mark Neuburger",
   "license": "MIT",
-  "homepage": "https://github.com/cvgellhorn/webpack-boilerplate",
+  "homepage": "https://github.com/markneub/man-simple",
   "scripts": {
     "dev": "NODE_ENV=dev webpack-dev-server --progress --config webpack.config.dev.js",
     "build": "webpack -p --progress --config webpack.config.build.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://cvgellhorn@github.com/cvgellhorn/webpack-boilerplate.git"
-  },
-  "dependencies": {
-    "jquery": "^3.2.0",
-    "lodash": "^4.17.4"
+    "url": "https://markneub@github.com/markneub/man-simple.git"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",

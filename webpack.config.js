@@ -10,10 +10,6 @@ var IS_DEV = (process.env.NODE_ENV === 'dev');
 
 module.exports = {
     entry: {
-        vendor: [
-            'jquery',
-            'lodash'
-        ],
         bundle: path.join(dirApp, 'index')
     },
     resolve: {
@@ -28,20 +24,9 @@ module.exports = {
             IS_DEV: IS_DEV
         }),
 
-        new webpack.ProvidePlugin({
-            // jQuery
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery',
-            'root.jQuery': 'jquery',
-
-            // lodash
-            '_': 'lodash'
-        }),
-
         new HtmlWebpackPlugin({
             template: path.join(__dirname, 'index.ejs'),
-            title: 'Webpack Boilerplate'
+            title: 'Mark Neuburger'
         })
     ],
     module: {
