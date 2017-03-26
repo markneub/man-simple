@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var dirApp = path.join(__dirname, 'app');
 var dirAssets = path.join(__dirname, 'assets');
@@ -27,7 +28,9 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.join(__dirname, 'index.ejs'),
             title: 'Mark Neuburger'
-        })
+        }),
+
+        new ExtractTextPlugin('style.css')
     ],
     module: {
         rules: [
@@ -44,36 +47,19 @@ module.exports = {
             // STYLES
             {
                 test: /\.css$/,
-                use: [
-                    'style-loader',
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            sourceMap: IS_DEV
-                        }
-                    },
-                ]
+                use: ExtractTextPlugin.extract({
+                  fallback: 'style-loader',
+                  use: 'css-loader'
+                })
             },
 
             // CSS / SASS
             {
-                test: /\.scss/,
-                use: [
-                    'style-loader',
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            sourceMap: IS_DEV
-                        }
-                    },
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: IS_DEV,
-                            includePaths: [dirAssets]
-                        }
-                    }
-                ]
+                test: /\.scss$/,
+                use: ExtractTextPlugin.extract({
+                  fallback: 'style-loader',
+                  use: ['css-loader', 'sass-loader']
+                })
             },
 
             // EJS
