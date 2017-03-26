@@ -3,14 +3,10 @@ Personal website for Mark Neuburger
 
 > Built with Webpack 2, ES6, and SCSS
 
-# Requirements
-You only need <b>node.js</b> pre-installed and you’re good to go.
-
 # Setup
 ```sh
 $ npm install
 ```
-
 # Development
 Run the local webpack-dev-server with livereload and autocompile on [http://localhost:8080/](http://localhost:8080/)
 ```sh
