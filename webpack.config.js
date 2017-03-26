@@ -25,7 +25,8 @@ module.exports = {
       IS_DEV
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'index.ejs')
+      template: path.join(__dirname, 'index.ejs'),
+      minify: !IS_DEV ? {} : false
     }),
     new ExtractTextPlugin('style.css')
   ],
