@@ -3,8 +3,8 @@ title: LED Music Visualizer
 year: '2012'
 ---
 
-<iframe width="640" height="390" src="//www.youtube.com/embed/___XwMbhV4k" frameborder="0" allowfullscreen="" style="margin-bottom: 20px;"></iframe>
-<iframe width="640" height="390" src="//www.youtube.com/embed/D_83ZUk8p-U" frameborder="0" allowfullscreen=""></iframe>
+<div class="aspect-ratio four-three"><iframe width="640" height="390" src="//www.youtube.com/embed/___XwMbhV4k" frameborder="0" allowfullscreen="" style="margin-bottom: 20px;"></iframe></div>
+<div class="aspect-ratio sixteen-nine"><iframe width="640" height="390" src="//www.youtube.com/embed/D_83ZUk8p-U" frameborder="0" allowfullscreen=""></iframe></div>
 
 ## Description ##
 
