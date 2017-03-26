@@ -38,6 +38,7 @@ p {
     color: $color-primary;
     position: relative;
     display: inline-block;
+    &:hover { color: $color-primary; }
     &:after {
       content: '';
       position: absolute;
@@ -50,9 +51,6 @@ p {
       transition: opacity 0.1s;
     }
     &:hover:after { opacity: 0 }
-    &:hover {
-      color: $color-primary;
-    }
     &:before {
       content: '';
       position: absolute;
@@ -67,8 +65,6 @@ p {
       transition: ease 0.25s transform;
       transition-delay: 0.13s;
     }
-    &:hover:before {
-      transform: scaleX(1);
-    }
+    &:hover:before { transform: scaleX(1); }
   }
 }
