@@ -26,7 +26,10 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'index.ejs'),
-      minify: !IS_DEV ? {} : false
+      minify: !IS_DEV ? {
+        removeComments: true,
+        collapseWhitespace: true
+      } : false
     }),
     new ExtractTextPlugin('style.css')
   ],
