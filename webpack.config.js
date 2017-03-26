@@ -2,6 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var dirApp = path.join(__dirname, 'app')
 var dirAssets = path.join(__dirname, 'assets')
@@ -34,7 +35,11 @@ module.exports = {
         collapseWhitespace: true
       } : false
     }),
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin('style.css'),
+    new CopyWebpackPlugin([{
+      from: path.join(__dirname, 'projects'),
+      to: path.join(__dirname, 'dist', 'projects')
+    }])
   ],
   module: {
     rules: [{

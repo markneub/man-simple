@@ -1,15 +1,14 @@
 // https://tympanus.net/codrops/2013/06/25/nifty-modal-window-effects/
 
 // modal styles
-
 .md-modal {
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	width: 50%;
-	max-width: 630px;
-	min-width: 320px;
-	height: auto;
+	width: calc(100vw - 64px);
+	max-width: 980px;
+	min-width: 360px;
+  height: calc(100vh - 64px);
 	z-index: 2000;
 	visibility: hidden;
 	backface-visibility: hidden;
@@ -29,56 +28,88 @@
 	left: 0;
 	z-index: 1000;
 	opacity: 0;
-	background: rgba(143,27,15,0.8);
+	background: rgba($color-dark, 0.8);
 	transition: all 0.3s;
 }
 
 // modal content styles
 
 .md-content {
-	color: #fff;
-	background: #e74c3c;
+	color: $color-dark;
+	background: $color-light;
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
-}
+  height: calc(100vh - 64px);
 
-.md-content h3 {
-	margin: 0;
-	padding: 0.4em;
-	text-align: center;
-	font-size: 2.4em;
-	font-weight: 300;
-	opacity: 0.8;
-	background: rgba(0,0,0,0.1);
-	border-radius: 3px 3px 0 0;
-}
+  > .title {
+  	margin: 0;
+  	text-align: left;
+    padding-left: 16px;
+  	font-size: 24px;
+  	font-weight: 400;
+  	opacity: 0.8;
+  	background: rgba(0,0,0,0.1);
+  	border-radius: 3px 3px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 48px;
+    line-height: 48px;
+    span {
+      opacity: 0.4;
+    }
+  }
 
-.md-content > div {
-	padding: 15px 40px 30px;
-	margin: 0;
-	font-weight: 300;
-	font-size: 1.15em;
-}
+  > .md-close {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    height: 32px;
+    overflow: hidden;
+    img {
+      height: 32px;
+      cursor: pointer;
+    }
+  }
 
-.md-content > div p {
-	margin: 0;
-	padding: 10px 0;
-}
+  > .scroll-content {
+    height: calc(100vh - 64px - 48px);
+    overflow: auto;
+  	padding: 32px;
+  	margin: 0;
 
-.md-content > div ul {
-	margin: 0;
-	padding: 0 0 30px 20px;
-}
+    &::-webkit-scrollbar {
+    	width: 12px;
+    	background-color: $color-light;
+    }
 
-.md-content > div ul li {
-	padding: 5px 0;
-}
+    &::-webkit-scrollbar-thumb {
+      border: 3px solid rgba(0, 0, 0, 0);
+      background-clip: padding-box;
+    	background-color: $color-dark;
+      border-radius: 1px;
+    }
 
-.md-content button {
-	display: block;
-	margin: 0 auto;
-	font-size: 0.8em;
+    iframe {
+    }
+
+    h2 {
+      margin-top: 16px;
+      margin-bottom: 4px;
+      font-size: 22px;
+    }
+
+    p {
+    	margin: 0;
+      font-size: 18px;
+    }
+
+    ul {
+    	margin: 0;
+    	padding: 0 0 0 20px;
+      list-style-type: circle;
+      text-indent: -4px;
+    }
+  }
 }
 
 // modal transition effect styles
