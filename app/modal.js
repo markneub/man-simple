@@ -43,6 +43,14 @@ var ModalEffects = (function () {
           })
       })
 
+      document.onkeydown = function (e) {
+        e = e || window.event
+        if (e.keyCode == 27) {
+          e.stopPropagation()
+          removeModalHandler()
+        }
+      }
+
       close.addEventListener('click', function (ev) {
         ev.stopPropagation()
         removeModalHandler()
