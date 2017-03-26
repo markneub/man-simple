@@ -11,7 +11,7 @@ var IS_DEV = (process.env.NODE_ENV === 'dev')
 
 module.exports = {
   entry: {
-    app: path.join(dirApp, 'index')
+    app: ['classie', path.join(dirApp, 'index')]
   },
   resolve: {
     modules: [
@@ -23,6 +23,9 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       IS_DEV
+    }),
+    new webpack.ProvidePlugin({
+      classie: 'classie'
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'index.ejs'),
