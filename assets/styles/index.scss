@@ -7,13 +7,15 @@
 html {
   box-sizing: border-box;
   background: radial-gradient(farthest-corner at 50% 30%, #002237 0%, $color-dark 100%);
+  min-height: 100%;
 }
 
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Esteban', sans-serif;
+  font-family: 'Georgia', serif;
+  line-height: 1.5;
   color: $color-light;
   font-size: 20px;
 }
@@ -26,4 +28,6 @@ body {
 
 h1 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-top: 60px;
 }
