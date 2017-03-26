@@ -11,7 +11,7 @@ var IS_DEV = (process.env.NODE_ENV === 'dev')
 
 module.exports = {
   entry: {
-    bundle: path.join(dirApp, 'index')
+    app: path.join(dirApp, 'index')
   },
   resolve: {
     modules: [

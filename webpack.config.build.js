@@ -3,13 +3,7 @@ var webpack = require('webpack')
 var CleanWebpackPlugin = require('clean-webpack-plugin')
 var webpackConfig = require('./webpack.config')
 
-webpackConfig.devtool = 'cheap-module-source-map'
-
-webpackConfig.plugins.push(
-  new webpack.optimize.CommonsChunkPlugin({
-    names: ['vendor', 'manifest']
-  })
-)
+webpackConfig.devtool = false
 
 webpackConfig.plugins.push(
   new CleanWebpackPlugin(['dist'])
@@ -17,7 +11,7 @@ webpackConfig.plugins.push(
 
 webpackConfig.output = {
   path: path.join(__dirname, 'dist'),
-  filename: '[name].[chunkhash].js'
+  filename: '[name].[chunkhash:4].js'
 }
 
 module.exports = webpackConfig
