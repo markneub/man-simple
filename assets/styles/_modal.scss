@@ -107,7 +107,11 @@
     	margin: 0;
     	padding: 0 0 0 20px;
       list-style-type: circle;
-      text-indent: -4px;
+    }
+
+    p a,
+    li a {
+      @include link_hover_effects($color-dark);
     }
   }
 }
