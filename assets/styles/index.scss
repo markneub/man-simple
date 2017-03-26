@@ -23,7 +23,8 @@ body {
 #wrapper {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 32px;
+  @include responsive-property(32, 64, padding-right, 400, 800);
+  @include responsive-property(32, 64, padding-left, 400, 800);
 }
 
 h1 {
@@ -39,6 +40,8 @@ p {
     color: $color-primary;
     position: relative;
     display: inline-block;
+
+    // hover effects
     &:hover { color: $color-primary; }
     &:after {
       content: '';
