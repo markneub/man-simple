@@ -17,7 +17,7 @@ body {
   font-family: 'Georgia', serif;
   line-height: 1.5;
   color: $color-light;
-  @include responsive-property(16, 20, font-size, 400, 800);
+  @include responsive-property(18, 20, font-size, 400, 800);
 }
 
 #wrapper {
@@ -30,6 +30,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   @include responsive-property(32, 64, margin-top, 400, 800);
+  @include responsive-property(0, 16, margin-bottom, 400, 800);
 }
 
 p {
