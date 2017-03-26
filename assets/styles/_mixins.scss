@@ -1,0 +1,13 @@
+/* Tween a CSS property's values as the user resizes the window */
+$wrapper_width: 1600;
+@mixin responsive-property($min_val: 10, $max_val: 13, $property: font-size, $min_width: 400, $max_width: $wrapper_width, $unit: px) {
+  @media (max-width: #{$min_width}px){
+    #{$property}: #{$min_val}#{$unit};
+  }
+  @media (min-width: #{$min_width}px) and (max-width: #{$max_width}px){
+    #{$property}: calc( #{$min_val}#{$unit} + (#{$max_val} - #{$min_val}) * ( (100vw - #{$min_width}px) / ( #{$max_width} - #{$min_width}) )) !important;
+  }
+  @media (min-width: #{$max_width}px){
+    #{$property}: #{$max_val}#{$unit};
+  }
+}
