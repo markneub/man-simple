@@ -71,7 +71,7 @@
   }
 
   > .scroll-content {
-    height: calc(100vh - 64px - 48px);
+    height: calc(100vh - 32px - 48px);
     overflow: auto;
     @include responsive-property(16, 32, padding, 400, 800)
   	margin: 0;
