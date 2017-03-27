@@ -29,6 +29,7 @@ body {
 }
 
 h1 {
+  @include responsive-property(32, 40, font-size, 400, 800);
   @include responsive-property(32, 64, margin-top, 400, 800);
   @include responsive-property(0, 16, margin-bottom, 400, 800);
 }
