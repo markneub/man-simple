@@ -26,6 +26,7 @@ var ModalEffects = (function () {
 
       function removeModalHandler () {
         classie.remove(modal, 'md-show')
+        modal.querySelector('.scroll-content').innerHTML = '' // erase content to destroy any videos that might be playing
       }
 
       el.addEventListener('click', function (ev) {
@@ -48,6 +49,7 @@ var ModalEffects = (function () {
         if (e.keyCode == 27) {
           e.stopPropagation()
           removeModalHandler()
+          document.onkeydown = null
         }
       }
 
