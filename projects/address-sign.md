@@ -3,7 +3,7 @@ title: Address Sign
 year: '2014'
 ---
 
-![Laser cut wooden address sign](/projects/address-sign/signcrop.jpg)
+![Laser cut wooden address sign](/projects/address-sign/process9.jpg)
 
 ## Description ##
 
