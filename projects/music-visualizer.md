@@ -3,8 +3,7 @@ title: LED Music Visualizer
 year: '2012'
 ---
 
-<div class="aspect-ratio four-three"><iframe width="640" height="390" src="//www.youtube.com/embed/___XwMbhV4k" frameborder="0" allowfullscreen="" style="margin-bottom: 20px;"></iframe></div>
-<div class="aspect-ratio sixteen-nine"><iframe width="640" height="390" src="//www.youtube.com/embed/D_83ZUk8p-U" frameborder="0" allowfullscreen=""></iframe></div>
+<div class="aspect-ratio four-three"><iframe width="640" height="390" src="//www.youtube.com/embed/___XwMbhV4k" frameborder="0" allowfullscreen=""></iframe></div>
 
 ## Description ##
 
@@ -32,3 +31,7 @@ Audio is passed in via a standard audio cable through the back of the unit. Insi
 - <a href="/projects/music-visualizer/visualizer_bb_lg.png" target="_blank">Breadboard</a>
 - <a href="/projects/music-visualizer/visualizer_schem_lg.png" target="_blank">Schematic</a>
 - <a href="/projects/music-visualizer/visualizer.ino.txt" target="_blank">Arduino source code</a>
+
+## Construction Video
+
+<div class="aspect-ratio sixteen-nine"><iframe width="640" height="390" src="//www.youtube.com/embed/D_83ZUk8p-U" frameborder="0" allowfullscreen=""></iframe></div>
