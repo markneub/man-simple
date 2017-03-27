@@ -3,7 +3,7 @@ title: Musical Heart
 year: '2014'
 ---
 
-<div class="aspect-ratio four-three"><iframe width="640" height="390" src="//www.youtube.com/embed/MlsUbHCxCiI" frameborder="0" allowfullscreen="" style="margin-bottom: 20px;"></iframe></div>
+<div class="aspect-ratio sixteen-nine"><iframe width="640" height="390" src="//www.youtube.com/embed/MlsUbHCxCiI" frameborder="0" allowfullscreen="" style="margin-bottom: 20px;"></iframe></div>
 
 ## Description ##
 
