@@ -38,6 +38,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'index.ejs'),
+      favicon: path.join(__dirname, 'favicon.ico'),
       minify: !IS_DEV ? {
         removeComments: true,
         collapseWhitespace: true
