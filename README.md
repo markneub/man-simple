@@ -1,7 +1,7 @@
 Personal website for Mark Neuburger
 ===========
 
-> Built with Webpack 2, ES6, and SCSS
+> Built with Webpack 2
 
 # Setup
 ```sh
