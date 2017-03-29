@@ -1,14 +1,15 @@
-var path = require('path')
-var webpack = require('webpack')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
-var CopyWebpackPlugin = require('copy-webpack-plugin');
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const autoprefixer = require('autoprefixer')
 
-var dirApp = path.join(__dirname, 'app')
-var dirAssets = path.join(__dirname, 'assets')
+const dirApp = path.join(__dirname, 'app')
+const dirAssets = path.join(__dirname, 'assets')
 
 // Is the current build a development build
-var IS_DEV = (process.env.NODE_ENV === 'dev')
+const IS_DEV = (process.env.NODE_ENV === 'dev')
 
 module.exports = {
   entry: {
@@ -22,6 +23,13 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: [
+          autoprefixer(),
+        ]
+      }
+    }),
     new webpack.DefinePlugin({
       IS_DEV
     }),
@@ -59,7 +67,7 @@ module.exports = {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader']
+          use: ['css-loader', 'sass-loader', 'postcss-loader']
         })
       }, {
         test: /\.ejs$/,
