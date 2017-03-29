@@ -6,7 +6,7 @@
 	top: 50%;
 	left: 50%;
 	width: calc(100vw - 32px);
-	max-width: 980px;
+	max-width: 708px;
 	min-width: 360px;
 	z-index: 2000;
 	visibility: hidden;
@@ -73,15 +73,13 @@
   > .scroll-content {
     height: calc(100vh - 32px - 48px);
     overflow: auto;
-    @include responsive-property(16, 32, padding-top, 400, 800)
-		@include responsive-property(16, 32, padding-left, 400, 800)
-		@include responsive-property(6, 20, padding-right, 400, 800)
-		@include responsive-property(16, 32, padding-bottom, 400, 800)
+    @include responsive-property(16, 32, padding, 400, 800)
   	margin: 0;
 
     &::-webkit-scrollbar {
     	width: 15px;
-    	background-color: $color-light;
+    	background: rgba(0,0,0,0.1);
+			border-top: 1px solid rgba(0,0,0,0.1);
     }
 
     &::-webkit-scrollbar-thumb {
@@ -115,7 +113,7 @@
     p {
 			margin-top: 0;
     	margin-bottom: 32px;
-      font-size: 18px;
+    	@include responsive-property(16, 18, font-size, 400, 800)
 			img {
 				margin-bottom: -32px;
 				max-width: 100%;
