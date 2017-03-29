@@ -48,6 +48,9 @@ module.exports = {
     new CopyWebpackPlugin([{
       from: path.join(__dirname, 'projects'),
       to: path.join(__dirname, 'dist', 'projects')
+    }, {
+      from: path.join(__dirname, 'static'),
+      to: path.join(__dirname, 'dist', 'static')
     }])
   ],
   module: {
