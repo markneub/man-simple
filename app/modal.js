@@ -8,7 +8,7 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  *
- * Modified by Mark Neuburger
+ * Modified by Mark Neuburger in 2017
  *
  */
 
