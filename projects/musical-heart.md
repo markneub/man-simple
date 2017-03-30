@@ -13,7 +13,7 @@ A week before Valentine's Day, I had an idea for a fun interactive project. I ru
 
 ![Prepping heart shapes](/projects/musical-heart/process1.jpeg)
 
-I prepped some scrap wood and laser cut it into heart shapes. This wood is Brazilian mahogany I got from my Dad that was originally leftover ends from a rebuilt front porch. These two pieces will be combined to form the lid of the box. The bottom half of the top (shown here below the top half) has three holes laser etched into it to allow space for small neodymium magnets, which will match magnets in the body of the box to keep the enclosure shut, but allow access when necessary.
+I prepped some scrap wood and laser cut it into heart shapes. This wood is Brazilian mahogany I got from my Dad that was originally leftover ends from a rebuilt front porch. These two pieces will be combined to form the lid of the box. The bottom half of the top (shown here to the left of the top half) has three holes laser etched into it to allow space for small neodymium magnets, which will match magnets in the body of the box to keep the enclosure shut, but allow access when necessary.
 
 ![Making the comp-heart-ment](/projects/musical-heart/process2.jpeg)
 
